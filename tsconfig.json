@@ -27,12 +27,6 @@
   "compileOnSave": true,
   "buildOnSave": false,
   "files": [
-    "api/cars.ts",
-    "api/deepThought.ts",
-    "api/genres.ts",
-    "api/guestbook.ts",
-    "api/makes.ts",
-    "api/movies.ts",
     "ngApp/js/app.ts",
     "ngApp/js/controllers.ts",
     "ngApp/js/services.ts",
