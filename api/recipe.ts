@@ -8,7 +8,7 @@ let jwt= require('jsonwebtoken');
 let request = require('request');
 let ipAddress = require('node-local-ip-address')();
 
-//API CLEARBIT
+//Save Recipe
 router.post('/recipe', function(req, res) {
 // request('https://sk_792329b163b90c6db62cfb69425122dc@company.clearbit.com/v2/companies/find?domain='+req.body.domain,
 // function (error, response, body) {
