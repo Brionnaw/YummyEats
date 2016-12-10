@@ -6,10 +6,30 @@ namespace app.Controllers {
         recipe:this.recipe
       }
       console.log(info)
+      this.recipeService.getRecipe(info).then(() => {
+        })
     }
-    constructor() {
+    constructor(
+      private recipeService: app.Services.RecipeService
+    ) {
+    }
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
   angular.module('app').controller('HomeController', HomeController);
