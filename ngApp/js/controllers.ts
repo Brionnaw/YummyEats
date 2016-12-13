@@ -1,9 +1,11 @@
 namespace app.Controllers {
   export class HomeController {
     public recipe;
+    public location;
     public search(){
       let info = {
-        recipe:this.recipe
+        recipe:this.recipe,
+        location:this.location
       }
       console.log(info)
       this.recipeService.getRecipe(info).then(() => {
@@ -13,18 +15,6 @@ namespace app.Controllers {
       private recipeService: app.Services.RecipeService
     ) {
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
