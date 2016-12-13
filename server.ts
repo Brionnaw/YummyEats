@@ -29,7 +29,7 @@ app.use(cookieParser());
 
 app.use(express.static('./ngApp'));
 app.use('/scripts', express.static('bower_components'));
-// app.use('/api', require('./api/recipe'));
+app.use('/api', require('./api/recipe'));
 
 app.get('/*', function(req, res, next) {
   if (/.js|.html|.css|templates|js|scripts/.test(req.path) || req.xhr) {
@@ -56,5 +56,6 @@ app.use(function(err: any, req, res, next) {
     error: error
   });
 });
+
 
 export = app;

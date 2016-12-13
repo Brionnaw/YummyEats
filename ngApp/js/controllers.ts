@@ -5,7 +5,6 @@ namespace app.Controllers {
     public search(){
       let info = {
         recipe:this.recipe,
-        location:this.location
       }
       console.log(info)
       this.recipeService.getRecipe(info).then(() => {

@@ -4,9 +4,16 @@ let router = express.Router();
 let mongoose = require('mongoose');
 
 
-//Save Recipe
+//MODEL
+let Recipe = mongoose.model('Recipe', {
+  Recipe:{
+    type:String,
+  },
+});
+
+//save Recipe
 router.post('/recipe', function(req, res) {
-  
+  console.log('hit')
 });
 
 
