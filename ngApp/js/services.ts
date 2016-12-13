@@ -10,7 +10,7 @@ namespace app.Services {
      $resource:ng.resource.IResourceService,
      public $state:ng.ui.IStateService
    ){
-    //  this.RecipeResource = $resource('api/recipe');
+     this.RecipeResource = $resource('api/recipe');
 
    }
  }
