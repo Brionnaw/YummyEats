@@ -1,15 +1,33 @@
 
 .searchBar {
-  padding: 100px 300px 100px 400px;
+  padding: 0px 300px 130px 400px;
+  padding-top: 30px;
 }
 
 input {
-  width:450px;
+  width:500px;
   height:30px;
   border-color: black;
 }
 
-.topSection {
-    background-image: url('/ngApp/images/veggy.jpg');
+.background {
+  background-image: url('/images/veggy1.jpg');
+  width:101%;
+  height:550px;
+  opacity: 0.8;
   background-repeat: no-repeat, repeat;
+  color:#000000;
+}
+
+.title {
+  font-size:120px;
+  padding:170px 0px 0px 100px;
+  color:green;"
+}
+
+.subTitle {
+  font-size:27px;
+  color:white;
+  padding:0px 0px 0px 100px;
+
 }
