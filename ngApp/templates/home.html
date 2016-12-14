@@ -2,3 +2,22 @@
 
 <input type="text" placeholder="recipe" ng-model="vm.recipe">
 <button type="button" name="button" class="btn btn-warning" ng-click="vm.search()">search</button>
+
+
+
+<div class="row">
+  <span ng-show="vm.recipeData">
+    <div class="col-xs-12 col-sm-12 col-md-12 panel">
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <h3> About </h3>
+        <hr>
+      </span>
+      <!-- {{vm.recipeData.recipes[0].image_url}} -->
+      <p>
+        <img
+        ng-src="{{vm.recipeData.recipes[0].image_url}}"
+        ng-click="vm.goToRecipe(vm.recipeData.recipes[0].recipe_id)"
+        width="100"
+        length="100"
+        alt="{{vm.companyData.title}}"/>
+      </p>
