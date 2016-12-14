@@ -11,9 +11,13 @@ let Recipe = mongoose.model('Recipe', {
   },
 });
 
+
 //save Recipe
 router.post('/recipe', function(req, res) {
-  request('http://food2fork.com/api/search?key=75cf831690ffc9d6e14a46dd5b3c8c13&q=shredded%20chicken',
+  let newRecipe = new Recipe ({
+      recipe:req.body.recipe
+  })
+  request('http://food2fork.com/api/search?key=75cf831690ffc9d6e14a46dd5b3c8c13&q='+req.body.recipe,
     function (error, response, body) {
       console.log(body)
       let type = JSON.parse(body)
