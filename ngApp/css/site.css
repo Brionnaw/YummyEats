@@ -1,0 +1,15 @@
+
+.searchBar {
+  padding: 100px 300px 100px 400px;
+}
+
+input {
+  width:450px;
+  height:30px;
+  border-color: black;
+}
+
+.topSection {
+    background-image: url('/ngApp/images/veggy.jpg');
+  background-repeat: no-repeat, repeat;
+}
