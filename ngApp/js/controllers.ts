@@ -8,7 +8,6 @@ namespace app.Controllers {
         recipe:this.recipe,
       }
       console.log(info)
-
       this.recipeService.getRecipe(info).then((res) => {
         if (res.message === 'recipe not found') {
           alert(res.message)
@@ -16,9 +15,7 @@ namespace app.Controllers {
           this.recipeData = res;
         }
         console.log(res)
-
       })
-
     }
     //webpage click //change to external href
     public goToRecipe(recipe_id) {

@@ -47,15 +47,15 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
-app.use(function(err: any, req, res, next) {
-  res.status(err.status || 500);
-  // Don't leak stack trace if not in development
-  let error = (app.get('env') === 'development') ? err : {};
-  res.send({
-    message: err.message,
-    error: error
-  });
-});
+// app.use(function(err: any, req, res, next) {
+//   res.status(err.status || 500);
+//   // Don't leak stack trace if not in development
+//   let error = (app.get('env') === 'development') ? err : {};
+//   res.send({
+//     message: err.message,
+//     error: error
+//   });
+// });
 
 
 export = app;
