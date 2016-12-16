@@ -1,7 +1,8 @@
-<div class="row background">
+<!-- title(desktop)-->
+<div class="row background hidden-xs">
   <div class="col-xs-12 col-sm-12 col-md-12">
     <p class="text-center title">
-      <i class="fa fa-cutlery"></i> Yummy Eats</p>
+      <i class="fa fa-cutlery"></i>Yummy Eats</p>
       <p class="text-center subTitle">
         Quickly find easy and yummy recipes for your next meal!
       </p>
@@ -12,7 +13,21 @@
       </div>
     </div>
 </div>
-
+<!-- MOBILE -->
+<div class="row background visible-xs">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+    <p class="text-center title">
+      <i class="fa fa-cutlery"></i>Yummy Eats</p>
+      <p class="text-center subTitle">
+        Quickly find easy and yummy recipes for your next meal!
+      </p>
+      <!-- search bar-->
+      <div class="searchBar">
+        <input type="text" placeholder="Enter recipe type or ingredients (eggs, beef, etc,..)" ng-model="vm.recipe">
+        <button type="button" name="button" class="btn btn-warning btn-sm" style="background-color:orange;" ng-click="vm.search()">search</button>
+      </div>
+    </div>
+</div>
 <!-- trending recipes -->
 <div class="col-xs-12 col-sm-12 col-md-12">
   <p class="text-center header" >Popular eats</p>

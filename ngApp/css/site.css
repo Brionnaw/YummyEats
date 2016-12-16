@@ -1,3 +1,5 @@
+
+
 .searchBar {
   padding: 0px 300px 130px 400px;
   padding-top: 30px;
@@ -59,4 +61,86 @@ img{
 .popularEats {
   text-align: center;
   padding: 0px 20px 50px 40px;
+}
+
+@media (min-width:481px) and (max-width:768px),(min-width:768px), (max-width:1095px), (min-width:1200px) 
+ {
+  .background {
+    background-image: url('/images/veggy1.jpg');
+    width:102%;
+    height:550px;
+    opacity: 0.8;
+    background-repeat: no-repeat, repeat;
+    color:#000000;
+  }
+  .title {
+    font-size:100px;
+    font-family:fruitopia;
+    padding:180px 0px 0px 80px;
+    color:green;
+  }
+  .subTitle {
+    font-size:24px;
+    color:white;
+    padding:0px 0px 0px 100px;
+    zoom:100%
+  }
+  .searchBar {
+    padding: 40px 30px 60px 140px;
+    zoom: 100%;
+    text-align: center;
+  }
+  .popularEats {
+    text-align: center;
+    padding: 60px 70px 60px 70px;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    padding: 10px 15px 10px 15px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+  .background {
+    background-image: url('/images/veggy1.jpg');
+    width:300vw;
+    height:550px;
+    opacity: 0.8;
+    background-repeat: no-repeat, repeat;
+    color:#000000;
+  }
+  .subTitle {
+    font-size:28px;
+    color:white;
+    padding:0px 20px 0px 80px;
+    zoom:100%
+  }
+  .searchBar {
+    padding: 20px 30px 60px 53px;
+    zoom: 50%;
+  }
+  .popularEats {
+    text-align: center;
+
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    padding: 0px 20px 10px 20px;
+    zoom:60%;
+  }
+  .footer {
+    width:300vw;
+    height:100px;
+    font-size:18px;
+    padding-top:40px;
+    color:white;
+    background-color: green;
+    opacity: 0.8;
+  }
+ body {
+   zoom:50%;
+
+ }
 }
