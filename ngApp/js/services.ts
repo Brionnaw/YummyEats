@@ -2,7 +2,6 @@ namespace app.Services {
  export class RecipeService {
    public RecipeResource;
    public getRecipe(getInfo) {
-
      console.log(getInfo)
      return this.RecipeResource.save(getInfo).$promise
    }
@@ -11,7 +10,6 @@ namespace app.Services {
      public $state:ng.ui.IStateService
    ){
      this.RecipeResource = $resource('api/recipe');
-
    }
  }
 

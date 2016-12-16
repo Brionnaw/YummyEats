@@ -29,6 +29,6 @@ namespace app.Controllers {
     ) {
     }
   }
-
+  
   angular.module('app').controller('HomeController', HomeController);
 }
