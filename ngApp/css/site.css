@@ -117,18 +117,19 @@ img{
         color:#000000;
       }
       .title {
-        font-size:20px;
+        font-size:60px;
         font-family:fruitopia;
         padding:150px 0px 0px 0px;
         color:green;
       }
       .searchBar {
-        padding: 0px 0px 0px 5px;
+        padding: 0px 20px 0px 25px;
         text-align: center;
         zoom:60%;
       }
       .btn {
-        margin-top: 20px;
+        margin-top: 30px;
+        zoom:200%;
       }
       .footer {
         max-width:100%;
@@ -140,9 +141,9 @@ img{
         opacity: 0.8;
       }
       .subTitle {
-        font-size:20px;
+        font-size:15px;
         color:white;
-        padding:0px 20px 0px 40px;
+        padding:0px 20px 0px 20px;
         zoom:100%
       }
     }
