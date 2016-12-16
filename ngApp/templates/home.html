@@ -13,6 +13,31 @@
     </div>
 </div>
 
+<!-- trending recipes eats-->
+<div class="col-xs-12">
+  <p class="text-center header" >Popular eats</p>
+  <p class="text-center header2"><b>Top picks of trending recipes</p>
+</div>
+<div class="row popularEats">
+  <div class="col-xs-3">
+    <a href="http://food2fork.com/view/Pumpkin_French_Toast/75179d"><img src="images/PumpkinFrenchToast1d115.jpg" alt="Pumpkin French Toast"></a>
+    <p>Pumpkin French Toast</p>
+    </div>
+  <div class="col-xs-3">
+    <a href="http://food2fork.com/view/Sweet_Potato_and_Kale_Grilled_Cheese/f66332"><img src="images/SweetPotatoKaleGrilledCheese55a59.jpg" alt="Sweet Potato and Kale Grilled Cheese"></a>
+    <p>Sweet Potato and Kale Grilled Cheese</p>
+  </div>
+  <div class="col-xs-3">
+    <a href="http://food2fork.com/view/Easy_BBQ_Baby_Back_Pork_Ribs_Recipe/cdd7cb"><img src="images/easy_bbq_baby_back_pork_ribs.jpg" alt="Easy BBQ Baby Back Pork Ribs Recipe"></a>
+    <p>Easy BBQ Baby Back Pork Ribs Recipe</p>
+  </div>
+    <div class="col-xs-3">
+      <a href="http://food2fork.com/view/Baked_Brie_with_Apples_and_Salted_Caramel/8edd94"><img src="images/BakedBriewithApplesandSaltedCaramel77cff.jpg" alt="Baked Brie with Apples and Salted Caramel"></a>
+      <p>Baked Brie with Apples and Salted Caramel</p>
+    </div>
+  </div>
+</div>
+
 <!-- search results-->
 <div class="row">
   <span ng-show="vm.recipeData">
@@ -23,8 +48,6 @@
         <img
           ng-src="{{vm.recipeData.recipes[0].image_url}}"
           ng-click="vm.goToRecipe(vm.recipeData.recipes[0].recipe_id)"
-          width="150"
-          length="150"
           alt="{{vm.recipeData.title}}"/>
           <h5>{{vm.recipeData.recipes[0].title}}</h5>
         </div>
@@ -37,8 +60,6 @@
           <img
           ng-src="{{vm.recipeData.recipes[1].image_url}}"
           ng-click="vm.goToRecipe(vm.recipeData.recipes[1].recipe_id)"
-          width="150"
-          length="150"
           alt="{{vm.recipeData.title}}"/>
           <h5>{{vm.recipeData.recipes[1].title}}</h5>
         </div>
@@ -51,8 +72,6 @@
         <img
           ng-src="{{vm.recipeData.recipes[2].image_url}}"
           ng-click="vm.goToRecipe(vm.recipeData.recipes[2].recipe_id)"
-          width="150"
-          length="15s0"
           alt="{{vm.recipe.title}}"/>
           <h5>{{vm.recipeData.recipes[2].title}}</h5>
         </div>
@@ -64,8 +83,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[3].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[3].recipe_id)"
-        width="150"
-        length="15s0"
         alt="{{vm.recipe.title}}"/>
         <h5>{{vm.recipeData.recipes[3].title}}</h5>
       </div>
@@ -78,8 +95,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[4].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[4].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[4].title}}</h5>
       </div>
@@ -92,8 +107,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[5].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[5].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[5].title}}</h5>
       </div>
@@ -106,8 +119,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[6].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[6].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[6].title}}</h5>
       </div>
@@ -120,8 +131,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[7].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[7].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[7].title}}</h5>
       </div>
@@ -134,8 +143,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[8].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[8].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[8].title}}</h5>
       </div>
@@ -149,8 +156,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[9].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[9].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[9].title}}</h5>
       </div>
@@ -163,8 +168,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[10].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[10].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[10].title}}</h5>
       </div>
@@ -177,8 +180,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[11].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[11].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[11].title}}</h5>
       </div>
@@ -192,8 +193,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[12].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[12].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[12].title}}</h5>
       </div>
@@ -206,8 +205,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[13].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[13].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[13].title}}</h5>
       </div>
@@ -220,8 +217,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[14].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[14].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[14].title}}</h5>
       </div>
@@ -234,8 +229,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[15].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[15].recipe_id)"
-        width="150"
-        length="15s0"
         alt="{{vm.recipe.title}}"/>
         <h5>{{vm.recipeData.recipes[15].title}}</h5>
       </div>
@@ -248,8 +241,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[16].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[16].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[16].title}}</h5>
       </div>
@@ -262,8 +253,6 @@
       <img
         ng-src="{{vm.recipeData.recipes[17].image_url}}"
         ng-click="vm.goToRecipe(vm.recipeData.recipes[17].recipe_id)"
-        width="150"
-        length="150"
         alt="{{vm.recipeData.title}}"/>
         <h5>{{vm.recipeData.recipes[17].title}}</h5>
       </div>
@@ -276,8 +265,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[18].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[18].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[18].title}}</h5>
     </div>
@@ -290,8 +277,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[19].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[19].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[19].title}}</h5>
     </div>
@@ -303,8 +288,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[20].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[20].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[20].title}}</h5>
     </div>
@@ -317,8 +300,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[21].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[21].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[21].title}}</h5>
     </div>
@@ -331,8 +312,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[22].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[22].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[22].title}}</h5>
     </div>
@@ -346,8 +325,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[23].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[23].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[23].title}}</h5>
     </div>
@@ -361,8 +338,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[24].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[24].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[24].title}}</h5>
     </div>
@@ -375,8 +350,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[25].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[25].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[25].title}}</h5>
     </div>
@@ -389,8 +362,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[26].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[26].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[26].title}}</h5>
     </div>
@@ -403,8 +374,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[27].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[27].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[27].title}}</h5>
     </div>
@@ -417,8 +386,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[28].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[28].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[28].title}}</h5>
     </div>
@@ -431,8 +398,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[29].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[29].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[29].title}}</h5>
     </div>
@@ -445,8 +410,6 @@
     <img
       ng-src="{{vm.recipeData.recipes[30].image_url}}"
       ng-click="vm.goToRecipe(vm.recipeData.recipes[30].recipe_id)"
-      width="150"
-      length="150"
       alt="{{vm.recipeData.title}}"/>
       <h5>{{vm.recipeData.recipes[30].title}}</h5>
     </div>
