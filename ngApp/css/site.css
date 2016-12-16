@@ -102,21 +102,50 @@ img{
 }
 
 
-@media only screen and (max-width: 667px),(min-width: 480px) {
+@media only screen and (max-width: 667px),(max-width: 480px) {
     /* For mobile phones: */
     [class*="col-xs"] {
         width: 100%;
+      }
+
+      .background {
+        background-image: url('/images/veggy1.jpg');
+        max-width:100%;
+        height:550px;
+        opacity: 0.8;
+        background-repeat: no-repeat, repeat;
+        color:#000000;
+      }
+      .title {
+        font-size:20px;
+        font-family:fruitopia;
+        padding:150px 0px 0px 0px;
+        color:green;
+      }
+      .searchBar {
+        padding: 0px 0px 0px 5px;
+        text-align: center;
+        zoom:60%;
+      }
+      .btn {
+        margin-top: 20px;
+      }
+      .footer {
+        max-width:100%;
+        height:100%;
+        font-size:18px;
+        padding-top:40px;
+        color:white;
+        background-color: green;
+        opacity: 0.8;
+      }
+      .subTitle {
+        font-size:20px;
+        color:white;
+        padding:0px 20px 0px 40px;
+        zoom:100%
+      }
     }
-    .footer {
-      width:100vw;
-      height:100%;
-      font-size:18px;
-      padding-top:40px;
-      color:white;
-      background-color: green;
-      opacity: 0.8;
-    }
-}
 
 /*@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
   .background {
