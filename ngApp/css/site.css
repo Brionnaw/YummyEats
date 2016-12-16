@@ -1,17 +1,14 @@
-
-
+/*Desktop*/
 .searchBar {
   padding: 0px 300px 130px 400px;
   padding-top: 30px;
   zoom: 100%;
 }
-
 input {
   width:500px;
   height:30px;
   border-color: orange;
 }
-
 .background {
   background-image: url('/images/veggy1.jpg');
   width:102%;
@@ -20,20 +17,17 @@ input {
   background-repeat: no-repeat, repeat;
   color:#000000;
 }
-
 .title {
   font-size:130px;
   font-family:fruitopia;
   padding:165px 0px 0px 100px;
   color:green;
 }
-
 .subTitle {
   font-size:27px;
   color:white;
   padding:0px 0px 0px 100px;
 }
-
 .footer {
   width:102.5%;
   height:100px;
@@ -43,7 +37,6 @@ input {
   background-color: green;
   opacity: 0.8;
 }
-
 .header{
   font-size: 50px;
   font-family: phobo;
@@ -52,19 +45,16 @@ input {
   font-size: 20px;
   font-family: phobo;
 }
-
 img{
   width: 200px;
   height: 200px;
 }
-
 .popularEats {
   text-align: center;
   padding: 0px 20px 50px 40px;
 }
-
-@media (min-width:481px) and (max-width:768px),(min-width:768px), (max-width:1095px), (min-width:1200px)
- {
+/*For tablets*/
+@media (min-width:481px) and (max-width:768px),(min-width:768px), (max-width:1095px), (min-width:1200px) {
   .background {
     background-image: url('/images/veggy1.jpg');
     width:102%;
@@ -101,109 +91,62 @@ img{
   }
 }
 
-
+/* For mobile phones: */
 @media only screen and (max-width: 667px),(max-width: 480px) {
-    /* For mobile phones: */
-    [class*="col-xs"] {
-        width: 100%;
-      }
-      [class*="col-xs-2"] {
-          width: 100%;
-          text-align:center;
-        }
-
-      .background {
-        background-image: url('/images/veggy1.jpg');
-        width:104%;
-        height:550px;
-        opacity: 0.8;
-        background-repeat: no-repeat, repeat;
-        color:#000000;
-      }
-      .title {
-        font-size:60px;
-        font-family:fruitopia;
-        padding:150px 0px 0px 0px;
-        color:green;
-      }
-      .searchBar {
-        padding: 0px 0px 0px 5px;
-        text-align: center;
-        zoom:70%;
-      }
-      .btn {
-        margin-top: 30px;
-        zoom:200%;
-      }
-
-      .subTitle {
-        font-size:15px;
-        color:white;
-        padding:0px 20px 0px 20px;
-        zoom:100%
-      }
-      img {
-        align-self: center;
-        width: 150px;
-        height: 150px;
-        padding: 10px 15px 10px 15px;
-      }
-        .header2 {
-          padding: 0px 5px 0px 5px;
-          font-size: 20px;
-          font-family: phobo;
-        }
-        .footer {
-          width:104%;
-          height:100%;
-          font-size:15px;
-          padding-top:40px;
-          color:white;
-          background-color: green;
-          opacity: 0.8;
-        }
-    }
-
-/*@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+  [class*="col-xs"] {
+    width: 100%;
+  }
+  [class*="col-xs-2"] {
+    width: 100%;
+    text-align:center;
+  }
   .background {
     background-image: url('/images/veggy1.jpg');
-    width:300vw;
+    width:104%;
     height:550px;
     opacity: 0.8;
     background-repeat: no-repeat, repeat;
     color:#000000;
   }
-  .subTitle {
-    font-size:28px;
-    color:white;
-    padding:0px 20px 0px 80px;
-    zoom:100%
+  .title {
+    font-size:60px;
+    font-family:fruitopia;
+    padding:150px 0px 0px 0px;
+    color:green;
   }
   .searchBar {
-    padding: 20px 30px 60px 53px;
-    zoom: 50%;
-  }
-  .popularEats {
+    padding: 0px 0px 0px 5px;
     text-align: center;
-
+    zoom:70%;
+  }
+  .btn {
+    margin-top: 30px;
+    zoom:200%;
+  }
+  .subTitle {
+    font-size:15px;
+    color:white;
+    padding:0px 20px 0px 20px;
+    zoom:100%
   }
   img {
-    width: 100px;
-    height: 100px;
-    padding: 0px 20px 10px 20px;
-    zoom:60%;
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    padding: 10px 15px 10px 15px;
+  }
+  .header2 {
+    padding: 0px 5px 0px 5px;
+    font-size: 20px;
+    font-family: phobo;
   }
   .footer {
-    width:300vw;
-    height:100px;
-    font-size:18px;
+    width:104%;
+    height:100%;
+    font-size:15px;
     padding-top:40px;
     color:white;
     background-color: green;
     opacity: 0.8;
   }
- body {
-   zoom:50%;
-
- }
-}*/
+}

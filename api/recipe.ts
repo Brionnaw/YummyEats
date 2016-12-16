@@ -4,14 +4,13 @@ let router = express.Router();
 let mongoose = require('mongoose');
 let request = require('request');
 
-//MODEL
+//model
 let Recipe = mongoose.model('Recipe', {
   Recipe:{
     type:String,
   },
 });
-
-//save Recipe
+//food2fork api
 router.post('/recipe', function(req, res) {
   let newRecipe = new Recipe ({
       recipe:req.body.recipe
@@ -29,7 +28,5 @@ router.post('/recipe', function(req, res) {
     })
   });
 
-
-
-// EXPORT ROUTER
+// export router
 export = router;
