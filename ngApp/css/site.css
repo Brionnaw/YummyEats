@@ -107,10 +107,14 @@ img{
     [class*="col-xs"] {
         width: 100%;
       }
+      [class*="col-xs-2"] {
+          width: 100%;
+          text-align:center;
+        }
 
       .background {
         background-image: url('/images/veggy1.jpg');
-        max-width:100%;
+        width:104%;
         height:550px;
         opacity: 0.8;
         background-repeat: no-repeat, repeat;
@@ -123,29 +127,41 @@ img{
         color:green;
       }
       .searchBar {
-        padding: 0px 20px 0px 25px;
+        padding: 0px 0px 0px 5px;
         text-align: center;
-        zoom:60%;
+        zoom:70%;
       }
       .btn {
         margin-top: 30px;
         zoom:200%;
       }
-      .footer {
-        max-width:100%;
-        height:100%;
-        font-size:18px;
-        padding-top:40px;
-        color:white;
-        background-color: green;
-        opacity: 0.8;
-      }
+
       .subTitle {
         font-size:15px;
         color:white;
         padding:0px 20px 0px 20px;
         zoom:100%
       }
+      img {
+        align-self: center;
+        width: 150px;
+        height: 150px;
+        padding: 10px 15px 10px 15px;
+      }
+        .header2 {
+          padding: 0px 5px 0px 5px;
+          font-size: 20px;
+          font-family: phobo;
+        }
+        .footer {
+          width:104%;
+          height:100%;
+          font-size:15px;
+          padding-top:40px;
+          color:white;
+          background-color: green;
+          opacity: 0.8;
+        }
     }
 
 /*@media only screen and (min-device-width: 375px) and (max-device-height: 667px){

@@ -1,5 +1,5 @@
 <!-- title(desktop)-->
-<div class="row background hidden-xs">
+<div class="row background">
   <div class="col-xs-12 col-sm-12 col-md-12">
     <p class="text-center title">
       <i class="fa fa-cutlery"></i>Yummy Eats</p>
@@ -13,21 +13,7 @@
       </div>
     </div>
 </div>
-<!-- MOBILE -->
-<div class="row background visible-xs">
-  <div class="col-xs-12 col-sm-12 col-md-12">
-    <p class="text-center title">
-      <i class="fa fa-cutlery"></i>Yummy Eats</p>
-      <p class="text-center subTitle">
-        Quickly find easy and yummy recipes for your next meal!
-      </p>
-      <!-- search bar-->
-      <div class="searchBar">
-        <input type="text" placeholder="Enter recipe type or ingredients (eggs, beef, etc,..)" ng-model="vm.recipe">
-        <button type="button" name="button" class="btn btn-warning btn-sm" style="background-color:orange;" ng-click="vm.search()">search</button>
-      </div>
-    </div>
-</div>
+
 <!-- trending recipes -->
 <div class="col-xs-12 col-sm-12 col-md-12">
   <p class="text-center header" >Popular eats</p>
@@ -57,7 +43,7 @@
 <div class="row">
   <span ng-show="vm.recipeData">
     <h1 class="text-center header">Results</h1>
-    <p class="text-center header2" style="font-size:30px"> Showing results with "{{vm.recipe}}"</p>
+    <p class="text-center header2"> Showing results with "{{vm.recipe}}"</p>
     <div class="col-xs-1 col-sm-1 col-md-1"></div>
       <div class="col-xs-2">
         <img
