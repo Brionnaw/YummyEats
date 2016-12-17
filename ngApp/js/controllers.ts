@@ -10,11 +10,12 @@ namespace app.Controllers {
       console.log(info)
       this.recipeService.getRecipe(info).then((res) => {
         if (res.message === 'recipe not found') {
-          alert('recipe not found')
+          alert(res.message)
         } else {
           this.recipeData = res;
         }
         console.log(res)
+        // fix this alert button when the array = [0]
       })
     }
     //webpage click //change to external href
