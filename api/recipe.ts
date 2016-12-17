@@ -19,7 +19,7 @@ router.post('/recipe', function(req, res) {
     function (error, response, body) {
       console.log(body)
       let type = JSON.parse(body)
-      if (type.name === req.body.recipe) {
+      if (type.name === req.body.type) {
         res.send(type);
       } else {
         console.log(error)

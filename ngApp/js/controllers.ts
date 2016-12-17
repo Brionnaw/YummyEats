@@ -10,7 +10,7 @@ namespace app.Controllers {
       console.log(info)
       this.recipeService.getRecipe(info).then((res) => {
         if (res.message === 'recipe not found') {
-          alert(res.message)
+          alert('recipe not found')
         } else {
           this.recipeData = res;
         }
