@@ -7,7 +7,7 @@ let request = require('request');
 //model
 let Recipe = mongoose.model('Recipe', {
   Recipe:{
-    type:String,
+    recipe:String,
   },
 });
 //food2fork api
@@ -15,12 +15,12 @@ router.post('/recipe', function(req, res) {
   let newRecipe = new Recipe ({
       recipe:req.body.recipe
   })
-  request('http://food2fork.com/api/search?key=75cf831690ffc9d6e14a46dd5b3c8c13&q='+req.body.type,
+  request('http://food2fork.com/api/search?key=75cf831690ffc9d6e14a46dd5b3c8c13&q='+req.body.recipe,
     function (error, response, body) {
       console.log(body)
-      let type = JSON.parse(body)
-      if (type.name === req.body.type) {
-        res.send(type);
+      let recipe = JSON.parse(body)
+      if (recipe.name === req.body.recipe) {
+        res.send(recipe);
       } else {
         console.log(error)
         res.send({message:'recipe not found'})
