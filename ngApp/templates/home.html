@@ -24,12 +24,13 @@
 </div>
 
 <!-- trending recipes -->
-<div class="col-xs-12 col-sm-12 col-md-12">
+<div ng-hide="vm.recipeData" class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12">
   <p class="text-center header" >Popular eats</p>
   <p class="text-center header2"><b>Top picks of trending recipes</p>
-</div>
-<div class="row popularEats">
-  <div class="col-xs-3 col-sm-3 col-md-3">
+  </div>
+  <div class="row popularEats">
+    <div class="col-xs-3 col-sm-3 col-md-3">
     <a
     href="http://food2fork.com/view/Ice_Cream_French_Toast/427c7e">
     <img src="images/IceCreamFrenchToast.jpg" alt="Ice Cream French Toast"></a>
@@ -50,8 +51,8 @@
         <img src="images/WatermelonBlackberryandMintSalad.jpg" alt="Watermelon, Blackberry, and Mint Salad"></a>
       <p>Watermelon, Blackberry, and Mint Salad</p>
     </div>
+  </div>
 </div>
-
 <!-- search results-->
 <div class="row">
   <span ng-show="vm.recipeData">
